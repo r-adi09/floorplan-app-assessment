@@ -1,3 +1,18 @@
+#Floor plan app - Frontend
+This Repository contains the code for the Frontend of Floorplan app.
+
+#Features
+This app provides following features:
+1) Set unmask cells for cores.
+2) Set diode cells for cores.
+
+
+#Follow the below steps to run the project
+
+Clone the Directory.
+In the terminal move to the cloned directory. Execute the following command npm start. This will start the frontend and open up a new browser window with "localhost:3000".
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
