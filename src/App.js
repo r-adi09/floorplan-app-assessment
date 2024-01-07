@@ -25,6 +25,7 @@ function App() {
     setUnmaskClicked(new Set([...unmaskClicked, prod.name.split(" ")[1]]));
   };
 
+  //useEffect to call the PopulateCores function which fills the 80 cores in 4 different arrays
   useEffect(() => {
     setCores(PopulateCores());
   }, []);
@@ -36,6 +37,7 @@ function App() {
       <Row>
         <Col md="11">
           <MainHeading />
+          {/* set left grid and right grid for 1st half of table */}
           <Row>
             <GridCol msg="1" color={gridColors["1"]} />
             <Col className="ru-border p-0">
@@ -59,7 +61,9 @@ function App() {
             </Col>
             <GridCol msg="2" color={gridColors["2"]} />
           </Row>
+          {/* mid half line */}
           <Row className="ru-border ru-row">MIDHALF</Row>
+          {/* set left grid and right grid for bottom half of the table */}
           <Row>
           <GridCol msg="3" color={gridColors["3"]} />
             <Col className="ru-border p-0">
@@ -83,6 +87,7 @@ function App() {
             </Col>
             <GridCol msg="4" color={gridColors["4"]} />
           </Row>
+          {/* misc block */}
           <Row className="ru-border ru-row">MISC Block</Row>
         </Col>
         <Col md="1 p-0 align-items-center">

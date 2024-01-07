@@ -1,3 +1,6 @@
+//Left grid and right grid are quadrants in the grid.
+//consisting of the columns: diode, unmask, RU# and the list of cores.
+//left grid and right grid are mirror images.
 import React from "react";
 import { useState } from "react";
 import "./RightGrid.css";
@@ -6,6 +9,7 @@ import { Row, Col } from "reactstrap";
 
 const RightGrid = (props) => {
   const { gridNumber, color, cores, unmaskClicked, handleUnmaskClick } = props;
+  // RU#
   const startIndex = (gridNumber - 1) * 20;
   const [diodeClicked, setDiodeClicked] = useState(new Set());
 
@@ -23,6 +27,7 @@ const RightGrid = (props) => {
             <Row key={i} className="right-grid m-0">
               <Col>
                 <Row>
+                  {/* cores */}
                   <Col
                     className="p-0 ru-border-bottom"
                     style={{
@@ -34,6 +39,7 @@ const RightGrid = (props) => {
                   >
                     {product.name}
                   </Col>
+                  {/* RU# */}
                   <Col
                     style={{ width: "25px" }}
                     className="p-0 ru-border-left ru-border-bottom"
@@ -41,6 +47,7 @@ const RightGrid = (props) => {
                   >
                     {startIndex + i}
                   </Col>
+                  {/* unmask */}
                   <Col
                     style={{
                       width: "25px",
@@ -55,6 +62,7 @@ const RightGrid = (props) => {
                     display="block"
                     onClick={(e) => handleUnmaskClick(e, product)}
                   ></Col>
+                  {/* diode */}
                   <Col
                     style={{
                       width: "25px",

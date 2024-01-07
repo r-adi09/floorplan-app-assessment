@@ -1,3 +1,4 @@
+//first two rows of the table
 import React from "react";
 import "./MainHeading.css";
 import { Row, Col } from "reactstrap";
