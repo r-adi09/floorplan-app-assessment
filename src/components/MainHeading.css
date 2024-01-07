@@ -1,0 +1,27 @@
+.bg-color {
+  background-color: #004f7c;
+  color: #fff;
+}
+
+.ru-border {
+  border: 1px solid #03101a !important;
+}
+
+.vertical-heading {
+  min-height: 70px !important;
+  padding: 0 !important;
+  width: 25px !important;
+}
+
+.horizontal-heading {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  padding-left: 25px;
+  height: fit-content;
+}

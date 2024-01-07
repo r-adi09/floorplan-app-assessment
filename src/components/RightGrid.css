@@ -1,0 +1,22 @@
+.left-ru-block {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  border-left: 1px solid #dee2e6 !important;
+  border-right: 1px solid #dee2e6 !important;
+}
+
+.ru-border-left {
+  border-left: 1px solid #03101a !important;
+}
+
+.ru-border-bottom {
+  border-bottom: 1px solid #03101a !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.right-grid {
+  width: 100%;
+}
